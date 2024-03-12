@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    parameters {
+     choice choices: ['CAMEROON', 'GHANA', 'NIGERIA'], description: 'CHOOSE YOUR PRFARE COUNTRY', name: 'COUNTRY'
+    }
 
     stages {
 
